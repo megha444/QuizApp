@@ -9,6 +9,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/uottawalogo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/uottawalogo"
+        />
     <TextView
         android:id="@+id/tv_ap_name"
         android:layout_width="match_parent"
@@ -40,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:gravity="center"
-                android:text="Welcome!"
+                android:text="Welcome to Megha and Nahush's game!"
                 android:textColor="#363A43"
                 android:textStyle="bold"
                 android:textSize="35sp"/>
@@ -75,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textSize="18sp"
-                android:text="Start"
+                android:text="Let's Go!"
                 />
 
         </LinearLayout>

@@ -39,7 +39,10 @@ class ResultActivity : AppCompatActivity() {
 
         btn_finish.setOnClickListener {
 
-            startActivity(Intent(this, MainActivity::class.java))
+            val intent= Intent(this, ButtonSelectActivity::class.java)
+            intent.putExtra(Constants.SCORE,correctAns.toString())
+            //intent.putExtra(Constants.TOTAL, totalQues.toString())
+            startActivity(intent)
             finish()
         }
 
