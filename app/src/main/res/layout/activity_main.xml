@@ -11,24 +11,25 @@
 
     <ImageView
         android:id="@+id/uottawalogo"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:src="@drawable/uottawalogo"
+        android:layout_width="232dp"
+        android:layout_height="225dp"
+        android:src="@drawable/logopicture"
+        android:padding="15dp"
         />
+
     <TextView
         android:id="@+id/tv_ap_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quiz App"
+        android:layout_height="60dp"
         android:layout_marginBottom="30dp"
-        android:textSize="30sp"
         android:gravity="center"
-        android:textStyle="bold"
+        android:text="Quiz App"
         android:textColor="#FFFFFF"
- />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:layout_marginStart="20dp"
@@ -36,54 +37,57 @@
         app:cardCornerRadius="8dp"
         app:cardElevation="5dp"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             android:orientation="vertical"
-            android:padding="16dp"
-            >
+            android:padding="25dp">
+
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="80dp"
                 android:gravity="center"
                 android:text="Welcome to Megha and Nahush's game!"
                 android:textColor="#363A43"
-                android:textStyle="bold"
-                android:textSize="35sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="47dp"
                 android:gravity="center"
                 android:text="Please Enter Your Name"
                 android:textColor="#7A8089"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
             <!--<com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >-->
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:id="@+id/et_name"
-                    android:textColor="#363A43"
-                    android:inputType="textCapSentences"
-                    android:textColorHint="#7A8089"
-                    />
-<!--            </com.google.android.material.textfield.TextInputLayout>-->
-
-            <Button
-                android:id="@+id/btn_start"
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:textSize="18sp"
-                android:text="Let's Go!"
-                />
+                android:layout_height="56dp"
+                android:hint="Name"
+                android:inputType="textCapSentences"
+                android:textColor="#363A43"
+                android:textColorHint="#7A8089" />
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/purple_700"
+        android:text="Let's Go!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
 </LinearLayout>
