@@ -21,7 +21,7 @@ fun getQuestions(): ArrayList<Questions>{
         "Armenia",
         "Austria",
         1,
-        "#FF000000"
+        "#FFFFFF"
     )
     questionList.add(que1)
 
@@ -34,7 +34,7 @@ fun getQuestions(): ArrayList<Questions>{
         "Aruba",
         "Austria",
         2,
-        "#FF000000"
+        "#FFFFFF"
     )
     questionList.add(que2)
 
