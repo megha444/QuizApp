@@ -6,7 +6,6 @@ object Constants{
     const val TOTAL_QUESTIONS:String="total_questions"
     const val CORRECT_ANSWERS: String="correct_Answers"
     const val SCORE: String = "score"
-    const val TOTAL: String = "total"
 
 
 fun getQuestions(): ArrayList<Questions>{
@@ -21,7 +20,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Australia",
         "Armenia",
         "Austria",
-                1
+        1,
+        "#FF000000"
     )
     questionList.add(que1)
 
@@ -33,7 +33,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Australia",
         "Aruba",
         "Austria",
-        2
+        2,
+        "#FF000000"
     )
     questionList.add(que2)
 
@@ -45,7 +46,8 @@ fun getQuestions(): ArrayList<Questions>{
         "China",
         "Russia",
         "United States",
-        1
+        1,
+        "#F5E6BE"
     )
     questionList.add(que3)
 
@@ -58,7 +60,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Croatia",
         "Estonia",
         "Poland",
-        4
+        4,
+        "#F5E6BE"
     )
     questionList.add(que4)
 
@@ -70,7 +73,8 @@ fun getQuestions(): ArrayList<Questions>{
         "England",
         "India",
         "Pakistan",
-        3
+        3,
+        "#F5C6BE"
     )
     questionList.add(que5)
 
@@ -82,7 +86,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Holland",
         "India",
         "Pakistan",
-        4
+        4,
+        "#F5C6BE"
     )
     questionList.add(que6)
 
@@ -94,7 +99,8 @@ fun getQuestions(): ArrayList<Questions>{
         "5th",
         "10th",
         "15th",
-        4
+        4,
+        "#E4EDA1"
     )
     questionList.add(que7)
 
@@ -106,7 +112,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Vladimir Putin",
         "Lionel Messi",
         "Volodymyr Zelensky",
-        4
+        4,
+        "#E4EDA1"
     )
     questionList.add(que8)
 
@@ -118,7 +125,8 @@ fun getQuestions(): ArrayList<Questions>{
             "England and France",
                 "Canada and United States",
             "Spain and Italy",
-                2
+                2,
+        "#A1EDA1"
     )
     questionList.add(que9)
 
@@ -130,7 +138,8 @@ fun getQuestions(): ArrayList<Questions>{
         "China",
         "Russia",
         "United States",
-        2
+        2,
+        "#A1EDA1"
     )
     questionList.add(que10)
 
@@ -141,7 +150,8 @@ fun getQuestions(): ArrayList<Questions>{
                 "14,500 MW" ,
                 "18,500 MW" ,
                 "22,500 MW",
-        4
+        4,
+        "#A1EAED"
     )
     questionList.add(que11)
 
@@ -152,7 +162,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Iceland" ,
         "Greenland" ,
         "Russia",
-        4
+        4,
+        "#A1EAED"
     )
     questionList.add(que12)
 
@@ -164,7 +175,8 @@ fun getQuestions(): ArrayList<Questions>{
                 "Pacific ocean",
                 "Arctic ocean" ,
                 "Mediterranean Sea",
-        2
+        2,
+        "#A1B3ED"
     )
     questionList.add(que13)
 
@@ -175,7 +187,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Pacific ocean",
         "Arctic ocean" ,
         "Mediterranean Sea",
-        1
+        1,
+        "#A1B3ED"
     )
     questionList.add(que14)
 
@@ -186,7 +199,8 @@ fun getQuestions(): ArrayList<Questions>{
         "8000 meter",
         "8500 meter" ,
         "9000 meter",
-        2
+        2,
+        "#EAB3F1"
     )
     questionList.add(que15)
 
@@ -197,7 +211,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Lake Superior",
         "Lake Baikal" ,
         "Lake Lucerne",
-        3
+        3,
+        "#EAB3F1"
     )
     questionList.add(que16)
 
@@ -208,7 +223,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Pierre de Coubertin",
         "Thomas Bach" ,
         "Juan Antonio Samaranch",
-        2
+        2,
+        "#9C9096"
     )
     questionList.add(que17)
 
@@ -221,7 +237,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Luasanne",
         "London" ,
         "Zurich",
-        2
+        2,
+        "#9C9096"
     )
     questionList.add(que18)
 
@@ -232,7 +249,8 @@ fun getQuestions(): ArrayList<Questions>{
         "India",
         "Japan" ,
         "Thailand",
-        2
+        2,
+        "#CAC891"
     )
     questionList.add(que19)
 
@@ -243,7 +261,8 @@ fun getQuestions(): ArrayList<Questions>{
         "Canada",
         "Russia" ,
         "Venezuela",
-        4
+        4,
+        "#CAC891"
     )
     questionList.add(que20)
 

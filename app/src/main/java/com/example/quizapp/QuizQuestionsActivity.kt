@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -18,12 +19,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var mCorrectAnswers=0
     private var mUserName:String?="null"
 
+    private lateinit var mScrollView : ScrollView
     private lateinit var tv_option_one: TextView
     private lateinit var tv_option_two: TextView
     private lateinit var tv_option_three: TextView
     private lateinit var tv_option_four: TextView
     private lateinit var btn_submit: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
@@ -36,6 +37,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tv_option_three=findViewById(R.id.tv_option_three)
         tv_option_four=findViewById(R.id.tv_option_four)
         btn_submit=findViewById(R.id.btn_submit)
+        mScrollView=findViewById(R.id.scrView_questionsView)
 
         setQuestion()
 
@@ -45,14 +47,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tv_option_four.setOnClickListener(this)
         btn_submit.setOnClickListener(this)
     }
+    @SuppressLint("Range")
     private fun setQuestion(){
 
         var list = ArrayList<Int>()
         for (i in 1..4) {
             val randomIndex = Random.nextInt(mNewQuestionsList!!.size)
-            //if (list.indexOf(randomIndex)<0){
-             //   list.add(randomIndex)
-            //}
             list.add(randomIndex)
         }
         var newList=ArrayList<Questions>()
@@ -86,6 +86,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         tv_option_two.text=question.optionTwo
         tv_option_three.text=question.optionThree
         tv_option_four.text=question.optionFour
+        //mScrollView.setBackgroundColor(Integer.parseInt(question.color.replaceFirst("#", ""), 16))
+        mScrollView.setBackgroundColor(Color.parseColor(question.color))
     }
     private fun defaultOptionsView(){
         val options=ArrayList<TextView>()

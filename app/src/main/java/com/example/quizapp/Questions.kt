@@ -7,5 +7,6 @@ data class Questions(val id: Int,
     val optionTwo: String="",
     val optionThree: String="",
     val optionFour: String="",
-            val correctAnswer: Int = 0
+            val correctAnswer: Int = 0,
+                     val color: String = ""
 )
