@@ -89,6 +89,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         //mScrollView.setBackgroundColor(Integer.parseInt(question.color.replaceFirst("#", ""), 16))
         mScrollView.setBackgroundColor(Color.parseColor(question.color))
     }
+
+    //Setup layout template
     private fun defaultOptionsView(){
         val options=ArrayList<TextView>()
         options.add(0, tv_option_one)
@@ -102,6 +104,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             option.background=ContextCompat.getDrawable(this,R.drawable.default_option_border_bg)
         }
     }
+
+    //Enable option selector, keep score track
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.tv_option_one->{ selectedOptionView(tv_option_one,1)}
@@ -140,6 +144,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+    //Set options background
     private fun answerView(answer: Int, drawableView:Int){
         when(answer){
             1 ->{tv_option_one.background=ContextCompat.getDrawable(this,drawableView) }
@@ -148,6 +154,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
             4->{tv_option_four.background=ContextCompat.getDrawable(this,drawableView)}
         }
     }
+
+    //Set Green/Red colour based on choice
     private fun selectedOptionView(tv: TextView, selectedOptionNumber: Int){
         defaultOptionsView()
         mSelectedOptionPosition=selectedOptionNumber

@@ -35,13 +35,14 @@ class ResultActivity : AppCompatActivity() {
         val correctAns=intent.getIntExtra(Constants.CORRECT_ANSWERS,0)
         val totalQues=intent.getIntExtra(Constants.TOTAL_QUESTIONS,0)
 
+
+        //Display final score
         tv_score.text="Your score is $correctAns out of $totalQues"
 
         btn_finish.setOnClickListener {
 
             val intent= Intent(this, ButtonSelectActivity::class.java)
             intent.putExtra(Constants.SCORE,correctAns.toString())
-            //intent.putExtra(Constants.TOTAL, totalQues.toString())
             startActivity(intent)
             finish()
         }

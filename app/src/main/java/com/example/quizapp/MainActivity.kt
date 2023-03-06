@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         btn_start = findViewById(R.id.btn_start)
         et_name=findViewById(R.id.et_name)
 
+        //accept user name and head to the next activity
         btn_start.setOnClickListener {
             if(et_name.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
